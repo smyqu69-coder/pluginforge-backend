@@ -1,11 +1,5 @@
 {
   "version": 2,
-  "functions": {
-    "api/chat.js":             { "maxDuration": 60 },
-    "api/webhook-stripe.js":   { "maxDuration": 10 },
-    "api/user.js":             { "maxDuration": 10 },
-    "api/create-checkout.js":  { "maxDuration": 10 }
-  },
   "headers": [
     {
       "source": "/api/(.*)",
