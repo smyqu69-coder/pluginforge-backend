@@ -1,15 +1,15 @@
 {
   "version": 2,
-  "functions": {
-    "api/*.js": {
-      "maxDuration": 60
+  "builds": [
+    {
+      "src": "api/*.js",
+      "use": "@vercel/node"
     }
-  }
+  ],
+  "routes": [
+    {
+      "src": "/api/(.*)",
+      "dest": "/api/$1"
+    }
+  ]
 }
-```
-
-Kliknij **Commit changes** → Vercel automatycznie zrobi redeploy.
-
-Potem sprawdź:
-```
-https://pluginforge-backend.vercel.app/api/user
