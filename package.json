@@ -1,17 +1,8 @@
 {
   "name": "pluginforge-backend",
   "version": "2.0.0",
-  "description": "Backend PluginForge AI — limity tokenów, plany, Stripe, OAuth",
-  "type": "module",
-  "scripts": {
-    "dev": "vercel dev",
-    "deploy": "vercel --prod"
-  },
   "dependencies": {
     "@supabase/supabase-js": "^2.43.0",
     "stripe": "^15.7.0"
-  },
-  "devDependencies": {
-    "vercel": "^34.0.0"
   }
 }
